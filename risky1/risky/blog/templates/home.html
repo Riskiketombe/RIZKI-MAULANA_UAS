@@ -1,0 +1,14 @@
+{% for blog in blogs %}
+<table>
+    <tr>
+      <td>{{blog.title}}</td>
+      <td>{{blog.body}}</td>
+      <td>{{blog.category}}</td>
+    </tr>
+  </table>
+{% endfor %}
+
+<button type="button" class="btn btn-light">
+				<a href="{% url 'data_baru' %}">Tambahkan data</a>
+			</button>
+		</div>
